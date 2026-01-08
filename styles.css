@@ -1,0 +1,247 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: linear-gradient(to right, #87CEEB, #ADD8E6);
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    height: 120px;
+}
+
+.logo-container {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    border: 2px solid #ddd;
+}
+
+.logo {
+    max-width: 70px;
+    max-height: 70px;
+}
+
+.header-text {
+    flex: 1;
+    text-align: center;
+}
+
+.header-text h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.header-text .address {
+    font-size: 14px;
+    color: #333;
+}
+
+.sidebar {
+    background-color: #f5f5f5;
+    padding: 0;
+    height: 100vh;
+}
+
+.sidebar-header {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.btn-red {
+    width: 100%;
+    padding: 15px;
+    background-color: #DC143C;
+    color: white;
+    border: none;
+    text-align: left;
+    font-size: 13px;
+    cursor: pointer;
+    border-bottom: 2px solid white;
+}
+
+.btn-red-outline {
+    width: 100%;
+    padding: 15px;
+    background-color: white;
+    color: #DC143C;
+    border: 2px solid #DC143C;
+    text-align: left;
+    font-size: 13px;
+    cursor: pointer;
+    margin-top: 2px;
+}
+
+.btn-red:hover {
+    background-color: #B22222;
+}
+
+.btn-red-outline:hover {
+    background-color: #FFE4E4;
+}
+
+.form-section {
+    background-color: white;
+    padding: 40px;
+    min-height: 100vh;
+}
+
+.form-section h2 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-group label {
+    width: 100px;
+    padding-top: 8px;
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+    margin-right: 20px;
+}
+
+.form-group input[type="text"] {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.form-group textarea {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+    resize: vertical;
+}
+
+.btn-submit {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto 0;
+}
+
+.btn-submit:hover {
+    background-color: #45a049;
+}
+
+.jadwal-table {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 2px solid #333;
+}
+
+.jadwal-table th,
+.jadwal-table td {
+    border: 1px solid #333;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.jadwal-table thead th {
+    font-weight: bold;
+    color: #333;
+}
+
+.jadwal-table thead th.waktu {
+    background-color: #D3D3D3;
+    width: 15%;
+}
+
+.jadwal-table thead th.senin {
+    background-color: #FFB6C1;
+}
+
+.jadwal-table thead th.selasa {
+    background-color: #90EE90;
+}
+
+.jadwal-table thead th.rabu {
+    background-color: #B19CD9;
+}
+
+.jadwal-table thead th.kamis {
+    background-color: #FFE4B5;
+}
+
+.jadwal-table tbody td.waktu {
+    background-color: #D3D3D3;
+    font-weight: bold;
+}
+
+.jadwal-table tbody td.senin {
+    background-color: #FFB6C1;
+}
+
+.jadwal-table tbody td.selasa {
+    background-color: #90EE90;
+}
+
+.jadwal-table tbody td.rabu {
+    background-color: #B19CD9;
+}
+
+.jadwal-table tbody td.kamis {
+    background-color: #FFE4B5;
+}
+
+.jadwal-table tbody td.istirahat {
+    background-color: #D3D3D3;
+    font-weight: bold;
+    text-align: center;
+}
+
+.footer {
+    background: linear-gradient(to right, #87CEEB, #ADD8E6);
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

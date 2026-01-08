@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Source Code</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            color: #333;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .file-section {
+            margin-top: 40px;
+        }
+        .file-name {
+            background-color: #34495e;
+            color: white;
+            padding: 10px 15px;
+            font-family: monospace;
+            border-radius: 5px 5px 0 0;
+            display: inline-block;
+        }
+        pre {
+            background-color: #282c34;
+            color: #abb2bf;
+            padding: 20px;
+            border-radius: 0 5px 5px 5px;
+            overflow-x: auto;
+            border-left: 5px solid #3498db;
+            font-size: 14px;
+        }
+        .description {
+            margin-bottom: 10px;
+            font-style: italic;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>SOURCE CODE NOMOR 1 DAN 2 UAS PWD</h1>
+    <p style="text-align: center;"></p>.</p>
+
+    <div class="file-section">
+        <div class="file-name">index.html</div>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="id"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Sistem Informasi Mahasiswa - UNIVERSITAS INDRAPRASTA PGRI&lt;/title&gt;
+&lt;/head&gt;
+&lt;frameset rows="120,*,50" frameborder="1" border="2"&gt;
+    &lt;!-- Header Frame --&gt;
+    &lt;frame src="header.html" name="header" noresize&gt;
+    
+    &lt;!-- Main Content Frame (Sidebar + Content) --&gt;
+    &lt;frameset cols="250,*" frameborder="1" border="2"&gt;
+        &lt;!-- Sidebar Frame --&gt;
+        &lt;frame src="sidebar.html" name="sidebar" noresize&gt;
+        
+        &lt;!-- Main Content Frame --&gt;
+        &lt;frame src="input-data.html" name="main" noresize&gt;
+    &lt;/frameset&gt;
+    
+    &lt;!-- Footer Frame --&gt;
+    &lt;frame src="footer.html" name="footer" noresize&gt;
+&lt;/frameset&gt;
+&lt;noframes&gt;
+    &lt;body&gt;
+        &lt;p&gt;Browser Anda tidak mendukung frames.&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/noframes&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <div class="file-section">
+        <div class="file-name">header.html</div>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="id"&gt;
+&lt;head&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="header"&gt;
+        &lt;div class="logo-container"&gt;
+            &lt;img src="logo-pgri.png" alt="Logo PGRI" class="logo"&gt;
+        &lt;/div&gt;
+        &lt;div class="header-text"&gt;
+            &lt;h1&gt;UNIVERSITAS INDRAPRASTA PGRI&lt;/h1&gt;
+            &lt;p class="address"&gt;Jl. Nangka No.58 Tanjung Barat - Jaksel&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <div class="file-section">
+        <div class="file-name">sidebar.html</div>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="id"&gt;
+&lt;head&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="sidebar"&gt;
+        &lt;div class="sidebar-header"&gt;TAMPIL DATA KAMPUS A&lt;/div&gt;
+        &lt;button class="btn-red" onclick="parent.main.location.href='input-data.html'"&gt;
+            Input Data Mahasiswa
+        &lt;/button&gt;
+        &lt;button class="btn-red-outline" onclick="parent.main.location.href='tampil-data.html'"&gt;
+            Tampil Data Mahasiswa
+        &lt;/button&gt;
+        &lt;button class="btn-red-outline" onclick="parent.main.location.href='jadwal-kuliah.html'"&gt;
+            Jadwal Kuliah Mahasiswa
+        &lt;/button&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <div class="file-section">
+        <div class="file-name">input-data.html</div>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="id"&gt;
+&lt;head&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="form-section"&gt;
+        &lt;h2&gt;Input Data Mahasiswa&lt;/h2&gt;
+        &lt;form&gt;
+            &lt;div class="form-group"&gt;
+                &lt;label&gt;NPM&lt;/label&gt;
+                &lt;input type="text"&gt;
+            &lt;/div&gt;
+            &lt;div class="form-group"&gt;
+                &lt;label&gt;Nama&lt;/label&gt;
+                &lt;input type="text"&gt;
+            &lt;/div&gt;
+            &lt;div class="form-group"&gt;
+                &lt;label&gt;Alamat&lt;/label&gt;
+                &lt;textarea rows="4"&gt;&lt;/textarea&gt;
+            &lt;/div&gt;
+            &lt;button type="submit" class="btn-submit"&gt;Submit&lt;/button&gt;
+        &lt;/form&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <div class="file-section">
+        <div class="file-name">jadwal-kuliah.html</div>
+        <pre><code>&lt;!-- Struktur Tabel Jadwal dengan Rowspan dan Colspan --&gt;
+&lt;table class="jadwal-table"&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th class="waktu"&gt;Waktu&lt;/th&gt;
+            &lt;th class="senin"&gt;Senin&lt;/th&gt;
+            &lt;th class="selasa"&gt;Selasa&lt;/th&gt;
+            &lt;th class="rabu"&gt;Rabu&lt;/th&gt;
+            &lt;th class="kamis"&gt;Kamis&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td class="waktu"&gt;08:00 - 09:30&lt;/td&gt;
+            &lt;td class="senin"&gt;Matematika Diskrit&lt;/td&gt;
+            &lt;td class="selasa" rowspan="2"&gt;Algoritma&lt;/td&gt;
+            &lt;td class="rabu" rowspan="4"&gt;Sistem Operasi&lt;/td&gt;
+            &lt;td class="kamis" rowspan="2"&gt;B. Inggris&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;!-- Baris selanjutnya mengikuti struktur CSS --&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+    </div>
+
+    <div class="file-section">
+        <div class="file-name">styles.css</div>
+        <pre><code>/* Reset dan Layouting */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, sans-serif; }
+
+/* Header dengan Gradasi */
+.header {
+    background: linear-gradient(to right, #87CEEB, #ADD8E6);
+    display: flex;
+    align-items: center;
+    height: 120px;
+}
+
+/* Sidebar Styling */
+.btn-red {
+    background-color: #DC143C;
+    color: white;
+    width: 100%;
+}
+
+/* Tabel Jadwal Styling */
+.jadwal-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.senin { background-color: #FFB6C1; }
+.selasa { background-color: #90EE90; }
+.rabu { background-color: #B19CD9; }
+.kamis { background-color: #FFE4B5; }</code></pre>
+    </div>
+
+</div>
+
+</body>
+</html>
